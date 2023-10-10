@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bubble tea</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
@@ -209,43 +209,46 @@
     </section>
     <section class="location">
       <div class="container">
+        <div class="location-wrap">
+          <div>
       <h2 class="locate-title section-title">Locate Us</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
-      <img
+      <p class="location-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
+      
+      <div class="location-photos-main-wrap">
+        <div class="location-photos-second-wrap">
+      <img    class="location-photo1 location-photos"
               srcset="./images/location/photo1.jpg   1x,
               ./images/location/photo1@2x.jpg 2x
               "
               src="./images/location/photo1@2x.jpg"
               alt="bubble tea"
-              width="186"
+              width=" 222"
             />
-        <img
+        <img  class="location-photos"
               srcset="./images/location/photo2.jpg   1x,
               ./images/location/photo2@2x.jpg 2x
               "
               src="./images/location/photo2@2x.jpg"
               alt="bubble tea"
-              width="232"
-            />
+              width=" 222"
+            /></div>
              <img
+             class="location-photos"
               srcset="./images/location/photo3.jpg   1x,
               ./images/location/photo3@2x.jpg 2x
               "
               src="./images/location/photo3@2x.jpg"
               alt="bubble tea"
-              width="217"
-            />
-        <img
-              srcset="./images/location/photo4.jpg   1x,
-              ./images/location/photo4@2x.jpg 2x
-              "
-              src="./images/location/photo4@2x.jpg"
-              alt="bubble tea"
-              width="196"
-            />
-        <div class="map"></div>
+              width="220"
+            /></div>
+          </div>
+        <iframe class="map" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.8743797030834!2d-1.337260822909536!3d52.063810969903685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48772756a4b9479b%3A0xd991f98a50ec4d7d!2sLock29!5e0!3m2!1sru!2suk!4v1696974149113!5m2!1sru!2suk" 
+       style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
         </div>
     </section>
     <footer></footer>
   </body>
+  <script src="./index.js" type="module"></script>
 </html>
