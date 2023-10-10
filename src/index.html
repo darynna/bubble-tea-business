@@ -3,12 +3,249 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <title>Bubble tea</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <header>
+      <div class="container header-container">
+        <img 
+         class="header-img"
+          srcset="./images/logo/logo.jpg 1x, ./images/logo/logo.jpg 2x"
+          src="./images/logo/logo.jpg"
+          alt="logo"
+          width="59"
+          height="57"
+        /> 
+        <nav class="nav">
+          <ul class="header-list">
+            <li class="header-item">Home</li>
+            <li class="header-item">About</li>
+            <li class="header-item">Locate Us</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">
+          Delicious Bubble Tea Created With
+          <span class="text-accent">LOVE</span> &
+          <span class="text-accent">JOY!</span>
+          <button class="hero-button" href="">Our Location</button>
+          <picture class="hero-photo">
+        <source srcset="./images/hero/comp-photo.png 1x, ./images/hero/comp-photo@2x.png 2x" type="image/png" media="(min-width: 1158px)" >    
+        <source srcset="./images/hero/tablet-photo.png 1x, ./images/hero/tablet-photo@2x.png 2x" type="image/png" media="(min-width: 768px)" >
+        <source srcset="./images/hero/hero-phone.png 1x, ./images/hero/hero-phone@2x.png 2x" type="image/png" media="(max-width: 767px)" />
+        <img src="./images/hero/hero-phone@2x.png" alt="bubble tea" />
+        </picture>
+        </h1>
+      </div>
+    </section>
+    <section class="explore">
+      <div class="container">
+        <h2 class="explore-title section-title">Explore Our Drinks!</h2>
+        <ul class="explore-list">
+          <li class="explore-item">
+            <img class="explore-img side-explore-img"
+              srcset="
+                ./images/explore/photo1.jpg    1x,
+                ./images/explore/photo1@2x.jpg 2x
+              "
+              src="./images/explore/photo2@2x.jpg"
+              alt="bubble tea"
+              width="195"
+            />
+          </li>
+          <li class="explore-item">
+            <img class="explore-img middle-explore-img"
+              srcset="
+                ./images/explore/photo2.jpg    1x,
+                ./images/explore/photo2@2x.jpg 2x
+              "
+              src="./images/explore/photo2@2x.jpg"
+              alt="bubble tea"
+              width="245"
+            />
+          </li>
+          <li class="explore-item">
+            <img class="explore-img side-explore-img"
+              srcset="
+                ./images/explore/photo3.jpg    1x,
+                ./images/explore/photo3@2x.jpg 2x
+              "
+              src="./images/explore/photo2@2x.jpg"
+              alt="bubble tea"
+              width="195"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about-decoration-box"></div>
+      <div class="container about-container">
+        <div class="about-elements">
+        <h2 class="about-title section-title">About Us</h2>
+        <p class="about-text">
+          Bubble Tea is used to describe a quirky drink and snack in one combination. Fruit or milk teas are served ice cold or hot with chewy tapioca pearls (Boba) that you suck up through a big fat straw! Sound intriguing, tastes utterly delicious.
+       <p class="about-text hide-about-text">Boba Bros has bought Bubble Tea to Banbury. Started by two best friends, the Lock29 site is an expansion of the business which began in Leamington Spa in 2020.</p>
+       <p class="about-text">Our passion is for quality drinks and desserts with Boba on them. We allow customers a freedom of choice of everything from sugar and ice levels to even having a choice of over 1000 combinations of drinks.</p>
+        </p>
+        <button class="about-button">Find Us on Google!</button>
+        </div>
+        <div class="about-photoes-wrap">
+        <img  class="about-img hide-about-img"
+              srcset="
+                ./images/about/photo1.jpg    1x,
+                ./images/about/photo1@2x.jpg 2x
+              "
+              src="./images/about/photo1@2x.jpg"
+              alt="bubble tea"
+              width="160"
+            />
+            <img  class="about-img hide-about-img"
+              srcset="
+                ./images/about/photo2.jpg    1x,
+                ./images/about/photo2@2x.jpg 2x
+              "
+              src="./images/about/photo2@2x.jpg"
+              alt="bubble tea"
+              width="160"
+            />
+            <img  class="about-img"
+              srcset="
+                ./images/about/photo3.jpg    1x,
+                ./images/about/photo3@2x.jpg 2x
+              "
+              src="./images/about/photo3@2x.jpg"
+              alt="bubble tea"
+              width="160"
+            />
+            <img  class="about-img hide-about-img"
+              srcset="
+                ./images/about/photo4.jpg    1x,
+                ./images/about/photo4@2x.jpg 2x
+              "
+              src="./images/about/photo4@2x.jpg"
+              alt="bubble tea"
+              width="160"
+            />
+</div>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="container">
+      <h2 class="menu-title section-title">Are You Ready to 
+        Taste Our Flavors?</h2>
+        <p class="menu-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <h3 class="menu-item-title">Step 1</h3>
+            <p class="menu-item-parag">Choose base</p>
+            <ul class="menu-list-first">
+              <li><p class="menu-item-first menu-item-title">MILK</p></li>
+              <li><p class="menu-item-first menu-item-title">FRUIT</p></li>
+            </ul>
+            <img
+              srcset="./images/menu/photo.jpg    1x,
+              ./images/menu/photo@2x.jpg 2x
+              "
+              src="./images/menu/photo@2x.jpg"
+              alt="bubble tea"
+              width="94"
+            />
+            <p class="menu-price">&#163 3.5</p>
+          </li>
+          <li class="menu-item">
+            <h3 class="menu-item-title">Step 2</h3>
+            <p class="menu-item-parag">Choose flavour</p>
+            <div class="menu-list-second">
+              <div class="menu-wrapper-list">
+                <p class="menu-second-title">MILK</p>
+                <ul class="list-second list-second-common">
+                  <li>classic</li>
+                  <li>coffee</li>
+                  <li>honeydew</li>
+                  <li>mango</li>
+                  <li>matcha</li>
+                </ul>
+              </div>
+            <div class="menu-wrapper-list">
+                <p class="menu-second-title">FRUIT</p>
+                <ul class="list-second list-second-common">
+                  <li>peach</li>
+                  <li>cherry</li>
+                  <li>orange</li>
+                  <li>blueberry</li>
+                  <li>maango</li>
+                </ul>
+              </div>
+            </div>
+            <p class="list-second-common">and many others!</p>
+          </li>
+          <li class="menu-item">
+            <h3 class="menu-item-title">Step 3</h3>
+            <p class="menu-item-parag">Choose topping <span class="menu-price">+&#163 0.5</span></p>
+            <img
+              srcset="./images/menu/photo2.png   1x,
+              ./images/menu/photo2@2x.png 2x
+              "
+              src="./images/menu/photo2@2x.png"
+              alt="bubble tea"
+              width="246"
+            />
+            <p class="list-second-common">Lots of different choices!</p>
+          </li>
+        </ul>
+        </div>
+    </section>
+    <section class="location">
+      <div class="container">
+      <h2 class="locate-title section-title">Locate Us</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
+      <img
+              srcset="./images/location/photo1.jpg   1x,
+              ./images/location/photo1@2x.jpg 2x
+              "
+              src="./images/location/photo1@2x.jpg"
+              alt="bubble tea"
+              width="186"
+            />
+        <img
+              srcset="./images/location/photo2.jpg   1x,
+              ./images/location/photo2@2x.jpg 2x
+              "
+              src="./images/location/photo2@2x.jpg"
+              alt="bubble tea"
+              width="232"
+            />
+             <img
+              srcset="./images/location/photo3.jpg   1x,
+              ./images/location/photo3@2x.jpg 2x
+              "
+              src="./images/location/photo3@2x.jpg"
+              alt="bubble tea"
+              width="217"
+            />
+        <img
+              srcset="./images/location/photo4.jpg   1x,
+              ./images/location/photo4@2x.jpg 2x
+              "
+              src="./images/location/photo4@2x.jpg"
+              alt="bubble tea"
+              width="196"
+            />
+        <div class="map"></div>
+        </div>
+    </section>
+    <footer></footer>
   </body>
 </html>
