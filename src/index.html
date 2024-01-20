@@ -12,10 +12,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link
+rel="icon"
+type="image/png"
+sizes="32x32"
+href="./images/logo/favicon.png"
+/>
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="container main-nav">
         <img 
          class="header-img"
           srcset="./images/logo/logo.jpg 1x, ./images/logo/logo.jpg 2x"
@@ -24,16 +30,33 @@
           width="59"
           height="57"
         /> 
-        <nav class="nav">
-          <ul class="header-list">
-            <a href="#hero" class="nav-link"><li class="header-item">Home</li></a>
-            <a href="#about" class="nav-link"><li class="header-item">About</li></a>
-            <a href="#menu" class="nav-link"><li class="header-item">Menu</li></a>
-            <a href="#location" class="nav-link"><li class="header-item">Locate Us</li></a>
-          </ul>
-        </nav>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg width="32" height="22" aria-label="open mobile menu">
+            <use
+              class="menu-toggle-icon"
+              href="./images/icon.svg#icon-charm-menu-hamburger"
+            ></use>
+          </svg>
+        </button>
+        <div class="navigation-wrap">
+          <nav class="nav">
+            <ul class="site-nav list">
+              <a href="#hero" class="nav-link"><li class="header-item">Home</li></a>
+              <a href="#about" class="nav-link"><li class="header-item">About</li></a>
+              <a href="#menu" class="nav-link"><li class="header-item">Menu</li></a>
+              <a href="#location" class="nav-link"><li class="header-item">Locate Us</li></a>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
+    <div class="go-top">▲</div>
+<main>
     <section class="hero" id="hero">
       <div class="container">
         <h1 class="hero-title">
@@ -41,12 +64,6 @@
           <span class="text-accent">LOVE</span> &
           <span class="text-accent">JOY!</span></h1>
           <a href="#location" class="hero-button" href="">Our Location</a>
-          <!-- <picture class="hero-photo">
-        <source srcset="./images/hero/comp-photo.png 1x, ./images/hero/comp-photo@2x.png 2x" type="image/png" media="(min-width: 1158px)" >    
-        <source srcset="./images/hero/tablet-photo.png 1x, ./images/hero/tablet-photo@2x.png 2x" type="image/png" media="(min-width: 768px)" >
-        <source srcset="./images/hero/hero-phone.png 1x, ./images/hero/hero-phone@2x.png 2x" type="image/png" media="(max-width: 767px)" />
-        <img src="./images/hero/hero-phone@2x.png" alt="bubble tea" />
-        </picture> -->
       </div>
     </section>
     <section class="explore">
@@ -244,8 +261,33 @@
           </div>
           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2452.929260441353!2d-1.3341441!3d52.0628117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48772756a4b9479b%3A0xd991f98a50ec4d7d!2sLock29!5e0!3m2!1sen!2suk!4v1698862543774!5m2!1sen!2suk"style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </section>
+    </section></main>
     <footer></footer>
-  </body>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        class="menu-toggle js-close-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        type="button"
+      >
+      <svg width="8" height="8" aria-label="open mobile menu">
+        <use href="./images/icon.svg#icon-close"></use>
+      </svg>
+        </svg>
+      </button>
+      <div>
+      <nav class="nav">
+        <ul class="site-nav list mobile-menu">
+          <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="#location" class="nav-link">Locate Us</a></li>
+        </ul>
+      </nav>
+    <div>
+    </div>
+  </div>
   <script src="./index.js" type="module"></script>
+  </body>
 </html>
